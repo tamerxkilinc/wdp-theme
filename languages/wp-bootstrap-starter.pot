@@ -1,0 +1,843 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Bootstrap Starter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-12-21 16:21+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-4.8.8"
+
+#: inc/template-tags.php:152
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:55 inc/template-tags.php:61
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:156
+#, php-format
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: inc/template-tags.php:159
+msgid ""
+"<span style=\"margin-left: 5px;\" class=\"glyphicon glyphicon-edit\"></span> "
+"Edit"
+msgstr ""
+
+#: functions.php:99 functions.php:108 functions.php:117 functions.php:126
+msgid "Add widgets here."
+msgstr ""
+
+#. Author of the theme
+msgid "Afterimage Designs"
+msgstr ""
+
+#: footer-one.php:23
+msgid "Alle Rechte vorbehalten."
+msgstr ""
+
+#: inc/customizer.php:286
+msgid "Background Color"
+msgstr ""
+
+#: inc/customizer.php:295
+msgid "Background Image"
+msgstr ""
+
+#: inc/customizer.php:253
+msgid "Banner Tagline"
+msgstr ""
+
+#: inc/customizer.php:242
+msgid "Banner Title"
+msgstr ""
+
+#. Name of the template
+msgid "Blank with Container"
+msgstr ""
+
+#. Name of the template
+msgid "Blank without Container"
+msgstr ""
+
+#. Name of the template
+msgid "Boxed"
+msgstr ""
+
+#. Name of the template
+msgid "Boxed Sidebar Left"
+msgstr ""
+
+#. Name of the template
+msgid "Boxed Sidebar Right"
+msgstr ""
+
+#: comments.php:99
+msgid "Cancel Reply"
+msgstr ""
+
+#: inc/customizer.php:231
+msgid "Choose a background-color for the header banner"
+msgstr ""
+
+#: inc/customizer.php:211
+msgid "Choose a background-image for the header banner"
+msgstr ""
+
+#: inc/customizer.php:165
+msgid "Choose a color for the header banner heading"
+msgstr ""
+
+#: inc/customizer.php:201
+msgid "Choose a color for the header banner scroller"
+msgstr ""
+
+#: inc/customizer.php:183
+msgid "Choose a color for the header banner tagline"
+msgstr ""
+
+#: inc/customizer.php:909
+msgid "Choose a size for your icons"
+msgstr ""
+
+#: inc/customizer.php:703
+msgid "Choose a template for your footer"
+msgstr ""
+
+#: inc/customizer.php:453
+msgid "Choose a template for your header"
+msgstr ""
+
+#: inc/customizer.php:84
+msgid "Colors"
+msgstr ""
+
+#: comments.php:55 comments.php:73
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:90
+msgid "Comments are closed."
+msgstr ""
+
+#. 1: number of comments, 2: post title
+#: comments.php:38
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#. %s: post title
+#: comments.php:34
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr ""
+
+#: woocommerce/cart/cart.php:137
+msgid "Coupon:"
+msgstr ""
+
+#: footer-one.php:27
+msgid "Datenschutz."
+msgstr ""
+
+#: inc/customizer.php:726
+msgid "Define the background-color of the bottom footer"
+msgstr ""
+
+#: inc/customizer.php:611
+msgid "Define the background-color of the footer"
+msgstr ""
+
+#: inc/customizer.php:137
+msgid "Define the color of headings"
+msgstr ""
+
+#: inc/customizer.php:119
+msgid "Define the color of links"
+msgstr ""
+
+#: inc/customizer.php:744
+msgid "Define the color of links and text in the bottom footer"
+msgstr ""
+
+#: inc/customizer.php:665
+msgid ""
+"Define the color of the border of the headings in the footer-widgets-area"
+msgstr ""
+
+#: inc/customizer.php:629
+msgid "Define the color of the footer (text, links, ..)"
+msgstr ""
+
+#: inc/customizer.php:647
+msgid "Define the color of the headings in the footer"
+msgstr ""
+
+#: inc/customizer.php:101
+msgid "Define the color of the paragraph text"
+msgstr ""
+
+#: inc/customizer.php:762
+msgid "Define the color of to-the-top scrollerin the bottom footer"
+msgstr ""
+
+#: inc/customizer.php:583
+msgid "Define the color of your site-name"
+msgstr ""
+
+#: inc/customizer.php:848
+msgid "Define the colors of the widget headings"
+msgstr ""
+
+#: inc/customizer.php:866
+msgid "Define the colors of the widget texts (links, texts, icons, ...)"
+msgstr ""
+
+#: inc/customizer.php:529
+msgid "Define the link background of the site the user is currently viewing"
+msgstr ""
+
+#: inc/customizer.php:565
+msgid "Define the link background-color of all links in the navbar"
+msgstr ""
+
+#: inc/customizer.php:547
+msgid "Define the link color of all links in the navbar"
+msgstr ""
+
+#: inc/customizer.php:511
+msgid "Define the link color of the site the user is currently viewing"
+msgstr ""
+
+#: inc/customizer.php:681
+msgid ""
+"Define the style of the border of the headings of the footer widget area"
+msgstr ""
+
+#: inc/customizer.php:788
+msgid "Define the style of the sidebar"
+msgstr ""
+
+#: inc/template-tags.php:137
+msgid "Edit"
+msgstr ""
+
+#. %s: Name of current post
+#: template-parts/content-page.php:39 inc/template-tags.php:71
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: inc/customizer.php:475
+msgid "Enable or disable box shadow for the header"
+msgstr ""
+
+#: inc/customizer.php:882
+msgid "Enable or disable box shadow for the sidebar widget boxes"
+msgstr ""
+
+#: inc/customizer.php:266
+msgid "Enable or disable the header banner"
+msgstr ""
+
+#: inc/customizer.php:930
+msgid "Facebook"
+msgstr ""
+
+#: inc/customizer.php:950
+msgid "Facebook icon color"
+msgstr ""
+
+#: inc/customizer.php:593
+msgid "Footer"
+msgstr ""
+
+#: functions.php:106
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:115
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:124
+msgid "Footer 3"
+msgstr ""
+
+#: inc/customizer.php:725
+msgid "Footer background color"
+msgstr ""
+
+#: inc/customizer.php:743
+msgid "Footer color"
+msgstr ""
+
+#: inc/customizer.php:761
+msgid "Footer scroller color"
+msgstr ""
+
+#: inc/customizer.php:702
+msgid "Footer template"
+msgstr ""
+
+#: inc/customizer.php:610
+msgid "Footer widgets background-color"
+msgstr ""
+
+#: inc/customizer.php:628
+msgid "Footer widgets color"
+msgstr ""
+
+#: inc/customizer.php:664
+msgid "Footer widgets heading border color"
+msgstr ""
+
+#: inc/customizer.php:680
+msgid "Footer widgets heading border style"
+msgstr ""
+
+#: inc/customizer.php:646
+msgid "Footer widgets heading color"
+msgstr ""
+
+#. Name of the template
+msgid "Full Width"
+msgstr ""
+
+#. Name of the template
+msgid "Full Width Sidebar Left"
+msgstr ""
+
+#. Name of the template
+msgid "Full Width Sidebar Right"
+msgstr ""
+
+#: inc/customizer.php:1035
+msgid "Google Plus"
+msgstr ""
+
+#: inc/customizer.php:1055
+msgid "Google plus icon color"
+msgstr ""
+
+#: inc/customizer.php:437
+msgid "Header"
+msgstr ""
+
+#: inc/customizer.php:493
+msgid "Header background color"
+msgstr ""
+
+#: inc/customizer.php:147
+msgid "Header Banner"
+msgstr ""
+
+#: inc/customizer.php:230
+msgid "Header Banner Background Color"
+msgstr ""
+
+#: inc/customizer.php:164 inc/customizer.php:182
+msgid "Header banner heading color"
+msgstr ""
+
+#: inc/customizer.php:200
+msgid "Header banner scroller color"
+msgstr ""
+
+#: inc/customizer.php:474
+msgid "Header Box Shadow"
+msgstr ""
+
+#: inc/customizer.php:210
+msgid "Header Image"
+msgstr ""
+
+#: inc/customizer.php:452
+msgid "Header template"
+msgstr ""
+
+#: inc/customizer.php:136
+msgid "Headings color"
+msgstr ""
+
+#. URI of the theme
+#. Author URI of the theme
+msgid "https://wdp-designs.de/"
+msgstr ""
+
+#: footer-one.php:26
+msgid "Impressum."
+msgstr ""
+
+#: inc/customizer.php:931
+msgid ""
+"Insert the link to your facebook site. Leave empty if you wish not to "
+"display this icon."
+msgstr ""
+
+#: inc/customizer.php:1036
+msgid ""
+"Insert the link to your Google Plus site. Leave empty if you wish not to "
+"display this icon."
+msgstr ""
+
+#: inc/customizer.php:966
+msgid ""
+"Insert the link to your instagram site. Leave empty if you wish not to "
+"display this icon."
+msgstr ""
+
+#: inc/customizer.php:1211
+msgid ""
+"Insert the link to your LinkedIn site. Leave empty if you wish not to "
+"display this icon."
+msgstr ""
+
+#: inc/customizer.php:1141
+msgid ""
+"Insert the link to your Pinterest site. Leave empty if you wish not to "
+"display this icon."
+msgstr ""
+
+#: inc/customizer.php:1001
+msgid ""
+"Insert the link to your snapchat site. Leave empty if you wish not to "
+"display this icon."
+msgstr ""
+
+#: inc/customizer.php:1176
+msgid ""
+"Insert the link to your Tumblr site. Leave empty if you wish not to display "
+"this icon."
+msgstr ""
+
+#: inc/customizer.php:1106
+msgid ""
+"Insert the link to your twitter site. Leave empty if you wish not to display "
+"this icon."
+msgstr ""
+
+#: inc/customizer.php:1246
+msgid ""
+"Insert the link to your Xing site. Leave empty if you wish not to display "
+"this icon."
+msgstr ""
+
+#: inc/customizer.php:1071
+msgid ""
+"Insert the link to your YouTube channel. Leave empty if you wish not to "
+"display this icon."
+msgstr ""
+
+#: inc/customizer.php:965
+msgid "Instagram"
+msgstr ""
+
+#: inc/customizer.php:985
+msgid "Instagram icon color"
+msgstr ""
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: template-parts/content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: searchform.php:3
+msgctxt "label"
+msgid "Search for:"
+msgstr ""
+
+#. %s: post title
+#: inc/template-tags.php:40
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: comments.php:97
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:98
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: inc/customizer.php:118
+msgid "Link color"
+msgstr ""
+
+#: inc/customizer.php:1210
+msgid "LinkedIn"
+msgstr ""
+
+#: inc/customizer.php:1230
+msgid "LinkedIn icon color"
+msgstr ""
+
+#. Name of the template
+msgid "Monostatos Homepage Template"
+msgstr ""
+
+#: inc/customizer.php:528
+msgid "Navbar active link background-color"
+msgstr ""
+
+#: inc/customizer.php:510
+msgid "Navbar active link color"
+msgstr ""
+
+#: inc/customizer.php:582
+msgid "Navbar brand color"
+msgstr ""
+
+#: inc/customizer.php:564
+msgid "Navbar link background-color"
+msgstr ""
+
+#: inc/customizer.php:546
+msgid "Navbar link color"
+msgstr ""
+
+#: comments.php:59 comments.php:77
+msgid "Newer Comments"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: comments.php:58 comments.php:76
+msgid "Older Comments"
+msgstr ""
+
+#: inc/customizer.php:830
+msgid ""
+"Only available when choosing ,,Background with padding\" as sidebar style"
+msgstr ""
+
+#: inc/customizer.php:812
+msgid "Only available when choosing ,,Border on left\" as sidebar style"
+msgstr ""
+
+#: inc/customizer.php:409 inc/customizer.php:427
+msgid "Only visible on mobile devices"
+msgstr ""
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: inc/customizer.php:278
+msgid "Other Customizations"
+msgstr ""
+
+#: template-parts/content-page.php:27 template-parts/content.php:33
+#: template-parts/content-notitle.php:18
+msgid "Pages:"
+msgstr ""
+
+#: inc/customizer.php:100
+msgid "Paragraph color"
+msgstr ""
+
+#: functions.php:174
+msgid "Password:"
+msgstr ""
+
+#: inc/template-tags.php:137
+msgid "Pingback:"
+msgstr ""
+
+#: inc/customizer.php:1140
+msgid "Pinterest"
+msgstr ""
+
+#: inc/customizer.php:1160
+msgid "Pinterest icon color"
+msgstr ""
+
+#: searchform.php:3
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: inc/customizer.php:238
+msgid "PORSCH"
+msgstr ""
+
+#: inc/template-tags.php:31
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: comments.php:100
+msgid "Post Comment"
+msgstr ""
+
+#: inc/template-tags.php:26
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:57
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: functions.php:47
+msgid "Primary"
+msgstr ""
+
+#: template-parts/content-none.php:21
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: inc/customizer.php:265
+msgid "Remove Header Banner"
+msgstr ""
+
+#: search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: functions.php:97 inc/customizer.php:772
+msgid "Sidebar"
+msgstr ""
+
+#: inc/customizer.php:811
+msgid "Sidebar border color"
+msgstr ""
+
+#: inc/customizer.php:787
+msgid "Sidebar style"
+msgstr ""
+
+#: inc/customizer.php:829
+msgid "Sidebar widgets background color"
+msgstr ""
+
+#: inc/customizer.php:881
+msgid "Sidebar widgets box shadow"
+msgstr ""
+
+#: inc/customizer.php:865
+msgid "Sidebar widgets color"
+msgstr ""
+
+#: inc/customizer.php:847
+msgid "Sidebar widgets heading color"
+msgstr ""
+
+#: header-three.php:95 header-one.php:46 header-two.php:49
+msgid "Skip to content"
+msgstr ""
+
+#: inc/customizer.php:1000
+msgid "Snapchat"
+msgstr ""
+
+#: inc/customizer.php:1020
+msgid "Snapchat icon color"
+msgstr ""
+
+#: inc/customizer.php:893
+msgid "Social"
+msgstr ""
+
+#: inc/customizer.php:908
+msgid "Social icon's size"
+msgstr ""
+
+#: template-parts/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: inc/customizer.php:393
+msgid "Standard text without link. HTML allowed."
+msgstr ""
+
+#: functions.php:174
+msgid "Submit"
+msgstr ""
+
+#: searchform.php:5
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: inc/template-tags.php:63
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/customizer.php:360 inc/customizer.php:377
+msgid "Text with link. HTML allowed."
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"The best WordPress starter theme based on the most powerful frameworks in "
+"the world: \"_s\" (by Automattic, the main people behind WordPress "
+"development), Twitter Bootstrap (the most popular HTML, CSS, and JS "
+"framework for developing responsive, mobile first projects on the web) and "
+"Font Awesome (or Fontawesome, a full suite of 675+ pictographic icons for "
+"easy scalable vector graphics on websites). This theme, like WordPress, is "
+"licensed under the GPL. You can use this theme as base for your next "
+"WordPress theme project and you are allowed to remove the link at the footer "
+"or do whatever you want. Your feedback on how we can continuously improve "
+"this WordPress Starter Theme Bootstrap will be highly appreciated. Page "
+"templates includes Right-sidebar (default page template), Left-Sidebar, Full-"
+"Width, Blank with container, Blank without container Page. Other features - "
+"Currently using Bootstrap v4.0.0-beta.2 , Widgetized footer area, "
+"WooCommerce ready, Compatible with Contact Form 7, Compatible with Visual "
+"Composer, Compatible with Elementor Page Builder. This theme will be an "
+"active project which we will update from time to time. Check this page "
+"regularly for the updates."
+msgstr ""
+
+#: inc/customizer.php:148
+msgid "The header banner will only be shown on the home page"
+msgstr ""
+
+#: inc/customizer.php:249
+msgid ""
+"To customize the contents of this header banner and other elements of your "
+"site go to Dashboard - Appearance - Customize"
+msgstr ""
+
+#: header-three.php:149 header-one.php:100 header-two.php:109
+msgid ""
+"To customize the contents of this header banner and other elements of your "
+"site, go to Dashboard > Appearance > Customize"
+msgstr ""
+
+#: functions.php:173
+msgid "To view this protected post, enter the password below:"
+msgstr ""
+
+#: inc/customizer.php:308
+msgid "Topbar"
+msgstr ""
+
+#: inc/customizer.php:326
+msgid "Topbar background color"
+msgstr ""
+
+#: inc/customizer.php:344
+msgid "Topbar text color"
+msgstr ""
+
+#: inc/customizer.php:359
+msgid "Topbar text-left 1"
+msgstr ""
+
+#: inc/customizer.php:376
+msgid "Topbar text-left 2"
+msgstr ""
+
+#: inc/customizer.php:392
+msgid "Topbar text-right 1"
+msgstr ""
+
+#: inc/customizer.php:426
+msgid "Topbar toggler border-color"
+msgstr ""
+
+#: inc/customizer.php:408
+msgid "Topbar toggler text"
+msgstr ""
+
+#: inc/customizer.php:1175
+msgid "Tumblr"
+msgstr ""
+
+#: inc/customizer.php:1195
+msgid "Tumblr icon color"
+msgstr ""
+
+#: inc/customizer.php:1105
+msgid "Twitter"
+msgstr ""
+
+#: inc/customizer.php:1125
+msgid "Twitter icon color"
+msgstr ""
+
+#: inc/customizer.php:1285
+msgid "Upload Logo (replaces text)"
+msgstr ""
+
+#. Name of the theme
+msgid "WP Bootstrap Starter"
+msgstr ""
+
+#: inc/customizer.php:1245
+msgid "Xing"
+msgstr ""
+
+#: inc/customizer.php:1265
+msgid "Xing icon color"
+msgstr ""
+
+#: inc/customizer.php:309
+msgid "You can define colors and content of the topbar here."
+msgstr ""
+
+#: inc/customizer.php:594
+msgid "You can define colors and styles of the footer here"
+msgstr ""
+
+#: inc/customizer.php:438
+msgid "You can define colors and styles of the header here"
+msgstr ""
+
+#: inc/customizer.php:773
+msgid "You can define colors and styles of the sidebar here"
+msgstr ""
+
+#: inc/customizer.php:894
+msgid "You can insert your social media channels here."
+msgstr ""
+
+#: inc/template-tags.php:164
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/customizer.php:1070
+msgid "YouTube"
+msgstr ""
+
+#: inc/customizer.php:1090
+msgid "YouTube icon color"
+msgstr ""

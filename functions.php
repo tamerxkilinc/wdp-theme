@@ -517,3 +517,47 @@ function wdp_custom_price_suffix( $price ) {
     return $price . ' <span class="price-description"><small><a href="/versandkosten" target="_blank">zzgl. Versandkosten</a></small></span>';
 }
 add_filter( 'woocommerce_get_price_html', 'wdp_custom_price_suffix' );
+
+// Display one, some or all product via shortcode
+function wdp_display_products( $atts ) {
+
+	$args = [
+		"post_type" => "produkt",
+	];
+
+	if ( isset( $atts['id'] ) ) {
+
+		if( is_array( $atts["id"] ) ) {
+			$args["post__in"] = $atts["id"];
+		}else{
+			$args["p"] = $atts["id"];
+		}		
+		
+	}else{
+		$args["orderby"] = "name";
+		$args["order"] = "ASC";
+		$args["posts_per_page"] = -1;
+	}
+
+	$query = new WC_Query( $args );
+
+	if ( $query->has_posts() ) {
+		ob_start();
+		while ( $query->has_posts() ) {
+			$query->the_post();
+			?>
+			<div class="card">
+				<img class="card-img-top" src="#">
+				<div class="card-body">
+					<h4><?=get_the_title();?></h4>
+					<p><?=get_the_content();?>
+				</div>
+			</div>
+			<?php
+		}
+		return ob_get_clean();
+	}
+
+	return 'Keine Produkte verfügbar';
+}
+add_shortcode( 'wdp-produkte', 'wdp_display_products' );

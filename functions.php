@@ -103,7 +103,7 @@ function wp_bootstrap_starter_widgets_init() {
 		'after_title'   => '</h3>',
 	) );
     register_sidebar( array(
-        'name'          => esc_html__( 'Footer 1', 'wp-bootstrap-starter' ),
+        'name'          => esc_html__( 'Footer', 'wp-bootstrap-starter' ) . "1",
         'id'            => 'footer-1',
         'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-starter' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -112,7 +112,7 @@ function wp_bootstrap_starter_widgets_init() {
         'after_title'   => '</h3>',
     ) );
     register_sidebar( array(
-        'name'          => esc_html__( 'Footer 2', 'wp-bootstrap-starter' ),
+        'name'          => esc_html__( 'Footer', 'wp-bootstrap-starter' ) . "2",
         'id'            => 'footer-2',
         'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-starter' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -121,8 +121,26 @@ function wp_bootstrap_starter_widgets_init() {
         'after_title'   => '</h3>',
     ) );
     register_sidebar( array(
-        'name'          => esc_html__( 'Footer 3', 'wp-bootstrap-starter' ),
+        'name'          => esc_html__( 'Footer', 'wp-bootstrap-starter' ) . "3",
         'id'            => 'footer-3',
+        'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-starter' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+        'name'          => esc_html__( 'Footer', 'wp-bootstrap-starter' ) . "4",
+        'id'            => 'footer-4',
+        'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-starter' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+        'name'          => esc_html__( 'Footer', 'wp-bootstrap-starter' ) . "5",
+        'id'            => 'footer-5',
         'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-starter' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget'  => '</section>',

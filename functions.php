@@ -527,27 +527,26 @@ function wdp_display_products( $atts ) {
 
 	if ( isset( $atts['id'] ) ) {
 
-		if( is_array( $atts["id"] ) ) {
-			$args["post__in"] = $atts["id"];
-		}else{
-			$args["p"] = $atts["id"];
-		}		
+		$post_ids = explode( "," , $atts["id"] );
+		if( !empty( $post_ids ) ) {
+			$args["post__in"] = $post_ids;
+		}
 		
 	}else{
-		$args["orderby"] = "name";
+		$args["orderby"] = "title";
 		$args["order"] = "ASC";
 		$args["posts_per_page"] = -1;
 	}
 
-	$query = new WC_Query( $args );
+	$query = new WP_Query( $args );
 
-	if ( $query->has_posts() ) {
+	if ( $query->have_posts() ) {
 		ob_start();
-		while ( $query->has_posts() ) {
+		while ( $query->have_posts() ) {
 			$query->the_post();
 			?>
 			<div class="card">
-				<img class="card-img-top" src="#">
+				<img class="card-img-top" src="<?=wp_get_attachment_url( get_post_thumbnail_id() );?>">
 				<div class="card-body">
 					<h4><?=get_the_title();?></h4>
 					<p><?=get_the_content();?>

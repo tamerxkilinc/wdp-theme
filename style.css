@@ -1053,7 +1053,7 @@ font-weight:bold;
 		border:0!important;
 	}	
 
-	.topbar a {
+	.topbar #topbar-left a {
 		padding-top:10px;
 		padding-bottom:10px;
 		border-bottom-width:1px;

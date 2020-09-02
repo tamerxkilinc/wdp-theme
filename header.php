@@ -40,9 +40,11 @@
 				</a>
 			</div>
 			<div class="col-md-6 col-12 text-center text-lg-right" id="topbar-right">
-				<?php
-					get_template_part( 'template-parts/social');
-				?>
+				<div class="topbar-socials">
+					<?php
+						get_template_part( 'template-parts/social');
+					?>
+				</div>
 			</div>
 		</div>
     </div>

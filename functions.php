@@ -560,4 +560,4 @@ function wdp_display_products( $atts ) {
 
 	return 'Keine Produkte verfügbar';
 }
-add_shortcode( 'wdp-produkte', 'wdp_display_products' );
+add_shortcode( 'wdp_produkte', 'wdp_display_products' );

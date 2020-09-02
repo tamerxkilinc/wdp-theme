@@ -83,7 +83,7 @@ if ( $website_type == 'two' ) :
 
 						Der Unternehmer verpflichtet sich nicht, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
 
-						Plattform zur Online-Streitbeilegung der Europäischen Kommission: http://ec.europa.eu/consumers/odr/
+						Plattform zur Online-Streitbeilegung der Europäischen Kommission: <a href="http://ec.europa.eu/consumers/odr/" target="_blank">http://ec.europa.eu/consumers/odr/</a>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>

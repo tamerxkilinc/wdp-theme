@@ -30,16 +30,19 @@
 		</div>
 		<div class="row align-items-center collapse" id="topbarCollapse">		
 			<div class="col-md-6 col-12 text-center text-lg-left" id="topbar-left">
-				<a class="d-block d-md-inline-block mr-md-2" href="tel:<?php echo get_theme_mod('topbar_text_left1', '0999 - 654 524'); ?>"><i class="fas fa-phone text-secondary mr-2"></i><?php echo get_theme_mod('topbar_text_left1', '0999 - 654 524'); ?></a>
-				<a class="d-block d-md-inline" href="mailto:<?php echo get_theme_mod('topbar_text_left2', 'info@webdesignpresse.com'); ?>"><i class="fas fa-envelope text-secondary mr-2"></i><?php echo get_theme_mod('topbar_text_left2', 'info@webdesignpresse.com'); ?></a>
+				<a class="d-block d-md-inline-block mr-md-2" href="https://support.bestellmahl.com/rueckruf" target="_blank">
+					<i class="fas fa-phone text-secondary mr-2"></i>
+					<?php echo get_theme_mod('topbar_text_left1', '0999 - 654 524'); ?>
+				</a>
+				<a class="d-block d-md-inline" href="mailto:<?php echo get_theme_mod('topbar_text_left2', 'info@webdesignpresse.com'); ?>">
+					<i class="fas fa-envelope text-secondary mr-2"></i>
+					<?php echo get_theme_mod('topbar_text_left2', 'info@webdesignpresse.com'); ?>
+				</a>
 			</div>
 			<div class="col-md-6 col-12 text-center text-lg-right" id="topbar-right">
 				<?php
 					get_template_part( 'template-parts/social');
 				?>
-				<p>
-					<i class="fas fa-map-marker-alt text-secondary mr-2"></i><?php echo get_theme_mod('topbar_text_right1', 'Straße 12, 41366 Musterstadt'); ?>
-				</p>
 			</div>
 		</div>
     </div>

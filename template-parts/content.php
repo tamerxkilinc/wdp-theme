@@ -12,7 +12,7 @@
 	<div class="post-thumbnail">
 		<?php the_post_thumbnail(); ?>
 	</div>
-	<?php if ( !is_home() ) : ?>
+	<?php if ( !is_front_page() ) : ?>
 	<header class="entry-header">
 		<?php
 		if ( is_single() ) :
@@ -29,7 +29,7 @@
 		endif; ?>
 	</header><!-- .entry-header -->
 	<?php endif; ?>
-	
+
 	<div class="entry-content">
 		<?php
         if ( is_single() ) :

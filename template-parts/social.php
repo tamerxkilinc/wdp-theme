@@ -142,7 +142,7 @@ endif;
 
 
 foreach ( $social_query as $social ) :
-	echo '<a class="social_links" href="' . $social['link'] . '" style="color:' . $social['color'] . '!important;">' . $social['icon'] . '</a>';
+	echo '<a class="social_links" target="_blank" href="' . $social['link'] . '" style="color:' . $social['color'] . '!important;">' . $social['icon'] . '</a>';
 endforeach;
 
 ?>

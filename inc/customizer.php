@@ -1411,7 +1411,7 @@ function wp_bootstrap_starter_customizer_css()
 		#masthead .navbar-nav .nav-item.active .nav-link { background: <?php echo get_theme_mod('navbar_active_link_background', '#fff'); ?>; color: <?php echo get_theme_mod('navbar_active_link_color', '#666'); ?>; }
 		#masthead .navbar-brand > a { color: <?php echo get_theme_mod('navbar_brand_color', '#2b2b2b'); ?>; }
 		#footer-widget { background: <?php echo get_theme_mod('footer_widgets_background', '#eee' ); ?>; }
-		#footer-widget, #footer-widget li, #footer-widget i, #footer-widget tr, #footer-widget td, #footer-widget th, #footer-widget table a, #footer-widget .widget-title { color: <?php echo get_theme_mod('footer_widgets_color','#2b2b2b'); ?>;}
+		#footer-widget, #footer-widget li, #footer-widget tr, #footer-widget td, #footer-widget th, #footer-widget table a, #footer-widget .widget-title { color: <?php echo get_theme_mod('footer_widgets_color','#2b2b2b'); ?>;}
 		#footer-widget h1, #footer-widget h2, #footer-widget h3, #footer-widget h4, #footer-widget h5, #footer-widget h6,  { color: <?php echo get_theme_mod('footer_widgets_h_color','#2b2b2b'); ?>;}
 		<?php if ( get_theme_mod('footer_widgets_h_b_style') == 'style2' ) : ?>
 			#footer-widget .widget-title { border-bottom: 1px solid <?php echo get_theme_mod('footer_widgets_h_b_color', '#666'); ?>; }

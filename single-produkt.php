@@ -21,19 +21,18 @@ get_header(); ?>
                 $prefix = 'wdproduct-';
 
                 // get produkt fields
-                $thumbnail = wp_get_attachment_url( get_post_thumbnail_id() );
+                $image1 = rwmb_meta( $prefix . 'image1', array( 'size' => 'medium' ) );
                 $image2 = rwmb_meta( $prefix . 'image2', array( 'size' => 'medium' ) );
-                $gallery = rwmb_meta( $prefix . 'gallery', array( 'size' => 'full' ) );
-                $specs = rwmb_meta( $prefix . 'specs' );
                 $description1 = rwmb_meta( $prefix . 'description1' );
                 $description2 = rwmb_meta( $prefix . 'description2' );
-
+                $gallery = rwmb_meta( $prefix . 'gallery', array( 'size' => 'full' ) );
+                $specs = rwmb_meta( $prefix . 'specs' );
                 ?>
 
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                         <div class="entry-content">
                             <div class="container py-5">
-                                <div class="row justify-content-center">
+                                <div class="row align-items-center produkt-inforow">
                                     <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-left">
                                         <h1><?=get_the_title();?></h1>
                                         <?php echo do_shortcode( wpautop( $description1 ) ); ?>
@@ -46,7 +45,7 @@ get_header(); ?>
 
                             <section class="py-5 bg-light">
                                 <div class="container">
-                                    <div class="row justify-content-center">
+                                    <div class="row align-items-center produkt-inforow">
                                         <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-left">
                                             <?php foreach ( $image2 as $img )  {
                                                 echo '<img src="' . $img["url"] . '" class="img-fluid">';
@@ -61,9 +60,9 @@ get_header(); ?>
 
                             <section class="py-5 bg-bestellmahl">
                                 <div class="container">
-                                    <div class="row">
+                                    <div class="row produkt-inforow">
                                         <div class="col-12 text-center text-white">
-                                            Galerie
+                                            <h3 class="text-white">Galerie</h3>
                                         </div>
                                         <?php foreach ( $gallery as $galimg ) {
                                             echo

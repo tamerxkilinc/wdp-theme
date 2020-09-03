@@ -544,6 +544,7 @@ function wdp_display_products( $atts ) {
 		ob_start();
 		while ( $query->have_posts() ) {
 			$query->the_post();
+			$post_id = get_the_id();
 			?>
 			<div class="card">
 				<img class="card-img-top" src="<?=wp_get_attachment_url( get_post_thumbnail_id() );?>">

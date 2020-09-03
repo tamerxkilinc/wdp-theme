@@ -81,7 +81,7 @@ get_header(); ?>
 
                             <section class="pt-5">
                                 <div class="container">
-                                    <h3 class="text-center">Produktspezifikationen</h3>
+                                    <h3 class="mb-3">Produktspezifikationen</h3>
                                     <table class="table table-bordered table-hover table-sm table-responsive-md">
                                         <tbody>
                                         <?php

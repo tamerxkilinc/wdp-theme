@@ -560,3 +560,45 @@ function wdp_display_products( $atts ) {
 	return 'Keine Produkte verfügbar';
 }
 add_shortcode( 'wdp_produkte', 'wdp_display_products' );
+
+/* Add meta box for product information to post type produkt */
+add_filter( 'rwmb_meta_boxes', 'wdp_produkt_register_meta_boxes' );
+function wdp_produkt_register_meta_boxes( $meta_boxes ) {
+    $prefix = 'wdproduct-';
+
+    $meta_boxes[] = [
+        'title'      => esc_html__( 'Produktinformationen', 'wp-bootstrap-starter' ),
+        'id'         => 'produktinformationen',
+        'post_types' => ['produkt'],
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'fields'     => [
+            [
+                'type' => 'image',
+                'id'   => $prefix . 'image1',
+                'name' => esc_html__( 'Erstes Bild (links)', 'wp-bootstrap-starter' ),
+            ],
+            [
+                'type' => 'image',
+                'id'   => $prefix . 'image2',
+                'name' => esc_html__( 'Zweites Bild (rechts)', 'wp-bootstrap-starter' ),
+            ],
+            [
+                'type'       => 'image_advanced',
+                'id'         => $prefix . 'gallery',
+                'name'       => esc_html__( 'Bildergalerie', 'wp-bootstrap-starter' ),
+                'max_status' => false,
+            ],
+            [
+                'type'    => 'text_list',
+                'id'      => $prefix . 'specs',
+                'name'    => esc_html__( 'Produktspezifikationen', 'wp-bootstrap-starter' ),
+                'options' => [
+                    'Eigenschaft' => 'Wert',
+                ],
+            ],
+        ],
+    ];
+
+    return $meta_boxes;
+}

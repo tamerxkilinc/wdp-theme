@@ -48,12 +48,12 @@ get_header(); ?>
                             <section class="py-5 bg-light">
                                 <div class="container">
                                     <div class="row align-items-center produkt-inforow">
-                                        <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-left">
+                                        <div class="col-12 col-md-6 mb-4 mb-md-0 text-center">
                                             <?php foreach ( $image2 as $img2 )  {
                                                 echo '<img src="' . $img2["url"] . '" class="img-fluid">';
                                             } ?>
                                         </div>
-                                        <div class="col-12 col-md-6 text-center">
+                                        <div class="col-12 col-md-6 text-center text-md-right">
                                             <?php echo do_shortcode( wpautop( $description2 ) ); ?>
                                         </div>
                                     </div>

@@ -576,10 +576,21 @@ function wdp_produkt_register_meta_boxes( $meta_boxes ) {
             [
                 'type' => 'image_advanced',
                 'id'   => $prefix . 'image2',
-                'name' => esc_html__( 'Zweites Bild (rechts)', 'wp-bootstrap-starter' ),
+                'name' => esc_html__( 'Bild Sektion 2', 'wp-bootstrap-starter' ),
 					 'max_status' => false,
 					 'max_file_uploads' => 1,
-            ],
+			],
+			[
+				'name'    => 'Beschreibung Sektion 2',
+				'id'      => $prefix . 'description2',
+				'type'    => 'wysiwyg',
+				'raw'     => false,
+			
+				'options' => array(
+					'textarea_rows' => 8,
+					'teeny'         => true,
+				),
+			],
             [
                 'type'       => 'image_advanced',
                 'id'         => $prefix . 'gallery',

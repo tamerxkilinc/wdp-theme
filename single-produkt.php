@@ -30,7 +30,7 @@ get_header(); ?>
 
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                         <div class="entry-content">
-                            <div class="container">
+                            <div class="container py-5">
                                 <div class="row justify-content-center">
                                     <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-left">
                                         <h1><?=get_the_title();?></h1>
@@ -58,19 +58,21 @@ get_header(); ?>
                             </section>
 
                             <section class="py-5 bg-bestellmahl">
-                                <div class="row">
-                                    <div class="col-12 text-center text-white">
-                                        Galerie
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 text-center text-white">
+                                            Galerie
+                                        </div>
+                                        <?php foreach ( $gallery as $galimg ) {
+                                            echo
+                                            '<div class="col-6 col-md-4 col-lg-3">
+                                                <a href="' . $galimg["full_url"] . '" data-fancybox="gallery">
+                                                    <img src="' . $galimg["url"] . '" class="img-fluid">
+                                                </a>
+                                            </div>';
+                                            }
+                                        ?>
                                     </div>
-                                    <?php foreach ( $gallery as $galimg ) {
-                                        echo
-                                        '<div class="col-6 col-md-4 col-lg-3">
-                                            <a href="' . $galimg["full_url"] . '" data-fancybox="gallery">
-                                                <img src="' . $galimg["url"] . '" class="img-fluid">
-                                            </a>
-                                        </div>';
-                                        }
-                                    ?>
                                 </div>
                             </section>
 

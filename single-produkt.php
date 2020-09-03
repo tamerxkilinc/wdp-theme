@@ -31,7 +31,7 @@ get_header(); ?>
 
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                         <div class="entry-content">
-                            <div class="container py-5">
+                            <div class="container pb-5">
                                 <div class="row align-items-center produkt-inforow">
                                     <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-left">
                                         <h1><?=get_the_title();?></h1>
@@ -79,16 +79,18 @@ get_header(); ?>
                                 </div>
                             </section>
 
-                            <section class="py-5">
+                            <section class="pt-5">
                                 <div class="container">
                                     <h3 class="text-center">Produktspezifikationen</h3>
-                                    <div class="produkt-table row">
+                                    <table class="table table-bordered table-hover table-sm table-responsive-md">
+                                        <tbody>
                                         <?php
                                             foreach ( $specs as $spec ) {
-                                                echo '<div class="col-4 bg-light">' . $spec[0] . '</div><div class="col-8">' . $spec[1] . '</div>';
+                                                echo '<tr><td class="table-secondary">' . $spec[0] . '</td><td>' . $spec[1] . '</td></tr>';
                                             }
                                         ?>
-                                    </div>      
+                                        </tbody>
+                                    </table>      
                                 </div>
                             </section>
 

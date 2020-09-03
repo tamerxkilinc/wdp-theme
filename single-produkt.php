@@ -25,6 +25,8 @@ get_header(); ?>
                 $image2 = rwmb_meta( $prefix . 'image2', array( 'size' => 'medium' ) );
                 $gallery = rwmb_meta( $prefix . 'gallery', array( 'size' => 'full' ) );
                 $specs = rwmb_meta( $prefix . 'specs' );
+                $description1 = rwmb_meta( $prefix . 'description1' );
+                $description2 = rwmb_meta( $prefix . 'description2' );
 
                 ?>
 
@@ -34,7 +36,7 @@ get_header(); ?>
                                 <div class="row justify-content-center">
                                     <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-left">
                                         <h1><?=get_the_title();?></h1>
-                                        <p class="lead"><?=get_the_content();?></p>
+                                        <?php echo do_shortcode( wpautop( $description1 ) ); ?>
                                     </div>
                                     <div class="col-12 col-md-6 text-center">
                                         <img src="<?=$thumbnail;?>" class="img-fluid">
@@ -51,7 +53,7 @@ get_header(); ?>
                                             } ?>
                                         </div>
                                         <div class="col-12 col-md-6 text-center">
-                                            Lorem impsum facto. 
+                                            <?php echo do_shortcode( wpautop( $description2 ) ); ?>
                                         </div>
                                     </div>
                                 </div>

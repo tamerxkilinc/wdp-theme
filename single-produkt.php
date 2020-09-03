@@ -81,11 +81,14 @@ get_header(); ?>
 
                             <section class="py-5">
                                 <div class="container">
-                                      <?php
-                                        foreach ( $specs as $spec ) {
-                                            var_dump( $spec );
-                                        }
-                                    ?>      
+                                    <h3 class="text-center">Produktspezifikationen</h3>
+                                    <div class="produkt-table row">
+                                        <?php
+                                            foreach ( $specs as $spec ) {
+                                                echo '<div class="col-5 bg-light">' . $spec[0] . '</div><div class="col-7">' . $spec[1] . '</div>';
+                                            }
+                                        ?>
+                                    </div>      
                                 </div>
                             </section>
 

@@ -12,7 +12,7 @@ get_header(); ?>
 <div id="content" class="site-content">
 	<div class="container">
 		<div class="row">
-			<section id="primary" class="content-area col-sm-12 col-md-12 col-lg-8">
+			<section id="primary" class="content-area col-sm-12 col-md-12 col-lg-12">
 				<main id="main" class="site-main" role="main">
 
 					<?php
@@ -44,7 +44,7 @@ get_header(); ?>
                                 <div class="row justify-content-center">
                                     <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-left">
                                         <?php foreach ( $image2 as $img )  {
-                                            echo '<img src="' . $img . '" class="img-fluid">';
+                                            echo '<img src="' . $img["url"] . '" class="img-fluid">';
                                         } ?>
                                     </div>
                                     <div class="col-12 col-md-6 text-center">
@@ -56,7 +56,9 @@ get_header(); ?>
                                     <?php foreach ( $gallery as $galimg ) {
                                         echo
                                         '<div class="col-6 col-md-4 col-lg-3">
-                                            <img src="' . $galimg . '" class="img-fluid" data-fancybox="gallery">
+                                            <a href="' . $galimg["full_url"] . '" data-fancybox="gallery">
+                                                <img src="' . $galimg["url"] . '" class="img-fluid">
+                                            </a>
                                         </div>';
                                         }
                                     ?>
@@ -73,9 +75,6 @@ get_header(); ?>
 				</main><!-- #main -->
 			</section><!-- #primary -->
 
-			<?php
-				get_sidebar();
-			?>
 		</div>
 	</div>
 </div>

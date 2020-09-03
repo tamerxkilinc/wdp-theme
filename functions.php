@@ -574,27 +574,27 @@ function wdp_produkt_register_meta_boxes( $meta_boxes ) {
         'priority'   => 'high',
         'fields'     => [
             [
-                'type' => 'image',
-                'id'   => $prefix . 'image1',
-                'name' => esc_html__( 'Erstes Bild (links)', 'wp-bootstrap-starter' ),
-            ],
-            [
-                'type' => 'image',
+                'type' => 'image_advanced',
                 'id'   => $prefix . 'image2',
                 'name' => esc_html__( 'Zweites Bild (rechts)', 'wp-bootstrap-starter' ),
+					 'max_status' => false,
+					 'max_file_uploads' => 1,
             ],
             [
                 'type'       => 'image_advanced',
                 'id'         => $prefix . 'gallery',
                 'name'       => esc_html__( 'Bildergalerie', 'wp-bootstrap-starter' ),
                 'max_status' => false,
+					 'max_file_uploads' => 8,
             ],
             [
                 'type'    => 'text_list',
                 'id'      => $prefix . 'specs',
                 'name'    => esc_html__( 'Produktspezifikationen', 'wp-bootstrap-starter' ),
+					 'clone'   => true,
                 'options' => [
-                    'Eigenschaft' => 'Wert',
+                    'zB. Version' => 'Eigenschaft',
+						  'zB. 1.2.1' => 'Wert'
                 ],
             ],
         ],

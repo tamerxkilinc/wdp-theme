@@ -85,7 +85,7 @@ get_header(); ?>
                                     <div class="produkt-table row">
                                         <?php
                                             foreach ( $specs as $spec ) {
-                                                echo '<div class="col-5 bg-light">' . $spec[0] . '</div><div class="col-7">' . $spec[1] . '</div>';
+                                                echo '<div class="col-4 bg-light">' . $spec[0] . '</div><div class="col-8">' . $spec[1] . '</div>';
                                             }
                                         ?>
                                     </div>      

@@ -10,27 +10,27 @@
 get_header(); ?>
 
 <div id="content" class="site-content">
-	<div class="container">
-		<div class="row">
-			<section id="primary" class="content-area col-sm-12 col-md-12 col-lg-12">
-				<main id="main" class="site-main" role="main">
+    <div class="row">
+        <section id="primary" class="content-area col-sm-12 col-md-12 col-lg-12">
+            <main id="main" class="site-main" role="main">
 
-					<?php
-                    while ( have_posts() ) : the_post();
+                <?php
+                while ( have_posts() ) : the_post();
 
-                    $post_id = get_the_id();
-                    $prefix = 'wdproduct-';
+                $post_id = get_the_id();
+                $prefix = 'wdproduct-';
 
-                    // get produkt fields
-                    $thumbnail = wp_get_attachment_url( get_post_thumbnail_id() );
-                    $image2 = rwmb_meta( $prefix . 'image2', array( 'size' => 'medium' ) );
-                    $gallery = rwmb_meta( $prefix . 'gallery', array( 'size' => 'full' ) );
-                    $specs = rwmb_meta( $prefix . 'specs' );
+                // get produkt fields
+                $thumbnail = wp_get_attachment_url( get_post_thumbnail_id() );
+                $image2 = rwmb_meta( $prefix . 'image2', array( 'size' => 'medium' ) );
+                $gallery = rwmb_meta( $prefix . 'gallery', array( 'size' => 'full' ) );
+                $specs = rwmb_meta( $prefix . 'specs' );
 
-                    ?>
+                ?>
 
-                        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                            <div class="entry-content">
+                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                        <div class="entry-content">
+                            <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-left">
                                         <h1><?=get_the_title();?></h1>
@@ -40,19 +40,28 @@ get_header(); ?>
                                         <img src="<?=$thumbnail;?>" class="img-fluid">
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="row justify-content-center">
-                                    <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-left">
-                                        <?php foreach ( $image2 as $img )  {
-                                            echo '<img src="' . $img["url"] . '" class="img-fluid">';
-                                        } ?>
-                                    </div>
-                                    <div class="col-12 col-md-6 text-center">
-                                        Lorem impsum facto. 
+                            <section class="py-5 bg-light">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-left">
+                                            <?php foreach ( $image2 as $img )  {
+                                                echo '<img src="' . $img["url"] . '" class="img-fluid">';
+                                            } ?>
+                                        </div>
+                                        <div class="col-12 col-md-6 text-center">
+                                            Lorem impsum facto. 
+                                        </div>
                                     </div>
                                 </div>
+                            </section>
 
+                            <section class="py-5 bg-bestellmahl">
                                 <div class="row">
+                                    <div class="col-12 text-center text-white">
+                                        Galerie
+                                    </div>
                                     <?php foreach ( $gallery as $galimg ) {
                                         echo
                                         '<div class="col-6 col-md-4 col-lg-3">
@@ -63,20 +72,20 @@ get_header(); ?>
                                         }
                                     ?>
                                 </div>
+                            </section>
 
-                            </div>
-                        </article>
+                        </div>
+                    </article>
 
 
-                    <?php
-                    endwhile; // End of the loop.
-					?>
+                <?php
+                endwhile; // End of the loop.
+                ?>
 
-				</main><!-- #main -->
-			</section><!-- #primary -->
+            </main><!-- #main -->
+        </section><!-- #primary -->
 
-		</div>
-	</div>
+    </div>
 </div>
 
 <?php get_footer();

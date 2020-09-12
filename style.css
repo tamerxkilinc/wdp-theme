@@ -1368,3 +1368,9 @@ footer#colophon .modal-body *, footer#colophon .modal-body, footer#colophon .mod
 html, body, a, p, h1, h2, h3, h4, h5, h6, li, th, td {
 	font-family: 'Inter';
 }
+
+/* Shortcode Product Cards */
+.wdp-produkt-card img {
+	max-height: 250px;
+	width: auto;
+}

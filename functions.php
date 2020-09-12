@@ -547,7 +547,9 @@ function wdp_display_products( $atts ) {
 			$post_id = get_the_id();
 			?>
 			<div class="card">
-				<img class="card-img-top" src="<?=wp_get_attachment_url( get_post_thumbnail_id() );?>">
+				<div class="bg-light px-3 text-center">
+					<img class="card-img-top" src="<?=wp_get_attachment_url( get_post_thumbnail_id() );?>">
+				</div>
 				<div class="card-body">
 					<h4><?=get_the_title();?></h4>
 					<p><?=get_the_content();?>

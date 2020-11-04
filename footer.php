@@ -13,11 +13,11 @@ $website_type = get_theme_mod( 'select_website_type', 'one' );
 if ( $website_type == 'two' ) :
 	// Single Page ?>
 	<!-- Modal Datenschutz -->
-		<div class="modal fade" id="exampleModal2Long" tabindex="-1" role="dialog" aria-labelledby="exampleModal2LongTitle" aria-hidden="true">
+		<div class="modal fade" id="datenschutzModal" tabindex="-1" role="dialog" aria-labelledby="datenschutzModalTitle" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h3 class="modal-title" id="exampleModal2LongTitle">Datenschutz</h3>
+						<h3 class="modal-title" id="datenschutzModal">Datenschutz</h3>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
@@ -43,11 +43,11 @@ if ( $website_type == 'two' ) :
 		</div>
 
 		<!-- Modal Impressum -->
-		<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		<div class="modal fade" id="impressumModal" tabindex="-1" role="dialog" aria-labelledby="impressumModalTitle" aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h3 class="modal-title" id="exampleModalLongTitle">Impressum</h3>
+						<h3 class="modal-title" id="impressumModalTitle">Impressum</h3>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>

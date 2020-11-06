@@ -30,16 +30,24 @@
 		</div>
 		<div class="row align-items-center collapse" id="topbarCollapse">		
 			<div class="col-md-6 col-12 text-center text-lg-left" id="topbar-left">
-				<a class="d-block d-md-inline-block mr-md-2" href="tel:<?php echo get_theme_mod('topbar_text_left1', '0999 - 654 524'); ?>"><?php echo get_theme_mod('topbar_text_left1', '0999 - 654 524'); ?></a>
-				<a class="d-block d-md-inline" href="mailto:<?php echo get_theme_mod('topbar_text_left2', 'info@webdesignpresse.com'); ?>"><?php echo get_theme_mod('topbar_text_left2', 'info@webdesignpresse.com'); ?></a>
+				<?php
+					if ( is_active_sidebar( 'topbar-l1' )) {
+						dynamic_sidebar( 'topbar-l1' );
+					}
+					if ( is_active_sidebar( 'topbar-l2' )) {
+						dynamic_sidebar( 'topbar-l2' );
+					}
+				?>
 			</div>
 			<div class="col-md-6 col-12 text-center text-lg-right" id="topbar-right">
 				<?php
-					get_template_part( 'template-parts/social');
+					if ( is_active_sidebar( 'topbar-r1' )) {
+						dynamic_sidebar( 'topbar-r1' );
+					}
+					if ( is_active_sidebar( 'topbar-r2' )) {
+						dynamic_sidebar( 'topbar-r2' );
+					}
 				?>
-				<p>
-					<?php echo get_theme_mod('topbar_text_right1', 'Straße 12, 41366 Musterstadt'); ?>
-				</p>
 			</div>
 		</div>
     </div>

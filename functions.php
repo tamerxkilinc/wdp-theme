@@ -128,6 +128,42 @@ function wp_bootstrap_starter_widgets_init() {
         'after_widget'  => '</section>',
         'before_title'  => '<h3 class="widget-title">',
         'after_title'   => '</h3>',
+	) );
+	register_sidebar( array(
+        'name'          => esc_html__( 'Topbar Left 1', 'wp-bootstrap-starter' ),
+        'id'            => 'topbar-l1',
+        'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-starter' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '',
+        'after_title'   => '',
+	) );
+	register_sidebar( array(
+        'name'          => esc_html__( 'Topbar Left 2', 'wp-bootstrap-starter' ),
+        'id'            => 'topbar-l2',
+        'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-starter' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '',
+        'after_title'   => '',
+	) );
+	register_sidebar( array(
+        'name'          => esc_html__( 'Topbar Right 1', 'wp-bootstrap-starter' ),
+        'id'            => 'topbar-r1',
+        'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-starter' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '',
+        'after_title'   => '',
+	) );
+	register_sidebar( array(
+        'name'          => esc_html__( 'Topbar Right 2', 'wp-bootstrap-starter' ),
+        'id'            => 'topbar-r2',
+        'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-starter' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '',
+        'after_title'   => '',
     ) );
 }
 add_action( 'widgets_init', 'wp_bootstrap_starter_widgets_init' );

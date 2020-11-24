@@ -189,12 +189,6 @@ function wp_bootstrap_starter_scripts() {
 	
 	// load fontawesome css
 	wp_enqueue_style( 'wp-bootstrap-starter-font-awesome', get_template_directory_uri() . '/inc/assets/css/all.min.css', false, '5.8.2' );
-	// load leaflet css
-	wp_enqueue_style( 'wp-bootstrap-starter-leaflet-css', 'https://unpkg.com/leaflet@1.4.0/dist/leaflet.css', false, '1.4.0' );
-	wp_script_add_data( 'wp-bootstrap-starter-leaflet-css', 'crossorigin', '' );
-	wp_script_add_data( 'wp-bootstrap-starter-leaflet-css', 'integrity', 'sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==' );
-	// load leaflet css gesture plugin
-	wp_enqueue_style( 'wp-bootstrap-starter-leaflet-gesture-css', get_template_directory_uri() . '/inc/assets/css/leaflet-gesture-handling.min.css', false, '1.1.8');
 	// load fancybox css
 	wp_enqueue_style( 'wp-bootstrap-starter-fancybox-css', 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css', false, '3.5.7' );
 	// load WP Bootstrap Starter styles
@@ -212,14 +206,6 @@ function wp_bootstrap_starter_scripts() {
     wp_enqueue_script( 'wp-bootstrap-starter-themejs', get_template_directory_uri() . '/inc/assets/js/theme-script.js', array() );
 	wp_enqueue_script( 'wp-bootstrap-starter-websitefunctions', get_template_directory_uri() . '/inc/assets/js/website-functions.js', array() );
 	wp_enqueue_script( 'wp-bootstrap-starter-skip-link-focus-fix', get_template_directory_uri() . '/inc/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
-
-	// load leaflet js
-	wp_enqueue_script( 'wp-bootstrap-starter-leaflet-js', 'https://unpkg.com/leaflet@1.4.0/dist/leaflet.js', array() );
-	wp_script_add_data( 'wp-bootstrap-starter-leaflet-js', 'integrity', 'sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==' );
-	wp_script_add_data( 'wp-bootstrap-starter-leaflet-js', 'crossorigin', '' );
-
-	// load leaflet js gesture plugin
-	wp_enqueue_script( 'wp-bootstrap-starter-leaflet-gesture-js', get_template_directory_uri() . '/inc/assets/js/leaflet-gesture-handling.min.js', array(), '1.1.8' );
 
 	// load fancybox js
 	wp_enqueue_script( 'wp-bootstrap-starter-fancybox-js', 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js', array() );

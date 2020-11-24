@@ -1248,6 +1248,13 @@ footer#colophon .modal-body *, footer#colophon .modal-body, footer#colophon .mod
 	padding:2px;
 }
 
+/* FORMS */
+
+.woocommerce .form-row span.woocommerce-input-wrapper {
+	display: block;
+	width: 100%!important;
+}
+
 /*-------------------------------------------------------------------
 ## Contact Form 7
 -------------------------------------------------------------------*/

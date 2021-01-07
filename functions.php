@@ -341,3 +341,16 @@ function wdp_custom_price_suffix( $price ) {
     return $price . ' <span class="price-description"><small><a href="/versandkosten" target="_blank">zzgl. Versandkosten</a></small></span>';
 }
 add_filter( 'woocommerce_get_price_html', 'wdp_custom_price_suffix' );
+
+// adds ajax functionality to mini cart count
+function wdp_refresh_mini_cart_count($fragments){
+    ob_start();
+    ?>
+    <div id="mini-cart-count">
+        <?php echo WC()->cart->get_cart_contents_count(); ?>
+    </div>
+    <?php
+        $fragments['#mini-cart-count'] = ob_get_clean();
+    return $fragments;
+}
+add_filter( 'woocommerce_add_to_cart_fragments', 'wdp_refresh_mini_cart_count');

@@ -1255,6 +1255,32 @@ footer#colophon .modal-body *, footer#colophon .modal-body, footer#colophon .mod
 	width: 100%!important;
 }
 
+/* MINI CART */
+#masthead .fa-layers {
+	position: relative;
+}
+
+#masthead .fa-layers div#mini-cart-count {
+	position: absolute;
+	background: #aaa;
+	color: #fff;
+	border-radius:99999px;
+	font-size: 10px;
+	padding: 0px 5px;
+	left:15px;
+	bottom:0px;
+}
+
+#masthead .navbar .navbar-icon i.fas {
+	font-size:1.35em;
+	margin:0px 5px;
+	cursor: pointer;
+}
+
+.woocommerce-mini-cart__buttons {
+	display: none;
+}
+
 /*-------------------------------------------------------------------
 ## Contact Form 7
 -------------------------------------------------------------------*/

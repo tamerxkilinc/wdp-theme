@@ -151,6 +151,11 @@ function wp_bootstrap_starter_scripts() {
 		wp_enqueue_style( 'wp-bootstrap-starter-bootstrap-css', get_template_directory_uri() . '/inc/assets/css/' . $bsts );
 	}
 	
+	
+	if( $$header_temp == 'shop'){
+		// offcanvas css
+		wp_enqueue_style( 'wp-bootstrap-starter-offcanvas-css',  get_template_directory_uri() . '/inc/assets/css/offcanvas.css', false, '1.0.1' );
+	}
 	// load fontawesome css
 	wp_enqueue_style( 'wp-bootstrap-starter-font-awesome', get_template_directory_uri() . '/inc/assets/css/all.min.css', false, '5.8.2' );
 	// load leaflet css
@@ -170,6 +175,11 @@ function wp_bootstrap_starter_scripts() {
     wp_enqueue_script( 'html5hiv',get_template_directory_uri().'/inc/assets/js/html5.js', array(), '3.7.0', false );
     wp_script_add_data( 'html5hiv', 'conditional', 'lt IE 9' );
 
+	if( $$header_temp == 'shop'){
+		// load offcanvas js
+		wp_enqueue_script( 'wp-bootstrap-starter-offcanvas-js', get_template_directory_uri() . '/inc/assets/js/offcanvas.js', array(), '1.0.1' );
+	}
+	
 	// load bootstrap js
     wp_enqueue_script( 'wp-bootstrap-starter-popper', get_template_directory_uri() . '/inc/assets/js/popper.min.js', array() );
 	wp_enqueue_script( 'wp-bootstrap-starter-bootstrapjs', get_template_directory_uri() . '/inc/assets/js/bootstrap.min.js', array() );

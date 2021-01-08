@@ -30,17 +30,20 @@ get_header(); ?>
 
             <?php else : ?>
 
-            <section id="primary" class="content-area col-sm-12 col-md-12 col-lg-8">
+            <section id="primary" class="content-area col-sm-12 col-md-12 col-lg-9">
                 <main id="main" class="site-main" role="main">
 
                     <?php woocommerce_content(); ?>
 
                 </main><!-- #main -->
             </section><!-- #primary -->
-            
+           
+            <aside id="secondary" class="widget-area col-sm-12 col-md-12 col-lg-3" role="complementary">
             <?php
-                get_sidebar();
-            endif; ?>
+                dynamic_sidebar( 'sidebar-shop' );
+            ?>
+            </aside>
+            <?php endif; ?>
 
         </div>
     </div>

@@ -70,6 +70,10 @@
 			case 'three':
 				get_header('three');
 				break;
+			
+			case 'shop':
+				get_header('shop');
+				break;
 				
 			default:
 				get_header('one');

@@ -640,6 +640,11 @@ a img.aligncenter {
 	font-size: 14px;
 	/* Make sure select elements fit in widgets. */
 }
+
+.topbar .widget{
+	margin-bottom:0px;
+}
+
 .widget select {
 	max-width: 100%;
 }
@@ -1287,4 +1292,37 @@ footer#colophon .modal-body *, footer#colophon .modal-body, footer#colophon .mod
 
 .wpcf7 label {
 	display: block;
+}
+
+/*-------------------------------------------------------------------
+## Wishlist CSS
+-------------------------------------------------------------------*/
+
+
+.yith-wcwl-add-button a, .yith-wcwl-wishlistexistsbrowse a {
+	position: absolute;
+	left: 20px;
+	top: 20px;
+	font-family: 'Font Awesome 5 Free';
+	visibility: hidden;
+	padding: 0px!important;
+	text-align: unset;
+}
+
+.yith-wcwl-add-button a::before {
+    content: "\f004";
+    visibility: visible;
+    transition-duration: 0.5s;
+}
+
+.yith-wcwl-add-button a:hover {
+		font-weight: 900;
+	transition-duration: 0.5s;
+}
+
+.yith-wcwl-wishlistexistsbrowse a::before {
+	font-weight: 900;
+	content: "\f004";
+	visibility: visible;
+	transition-duration: 0.5s;
 }

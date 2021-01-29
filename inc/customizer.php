@@ -586,7 +586,8 @@ function wp_bootstrap_starter_customize_register( $wp_customize ) {
 			'choices'  => array(
 				'one'  => 'Standard',
 				'two' => 'Centered Logo and Navigation',
-				'three' => 'Mobile Menu',
+                'three' => 'Mobile Menu',
+                'shop' => 'Shop',
 			),
 			'section'    => 'header',
 			'settings'   => 'header_template',

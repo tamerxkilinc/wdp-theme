@@ -15,12 +15,15 @@ get_header(); ?>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+					<?php if ( is_woocommerce_activated() ) : ?>
 					<div class="woocommerce-notices-wrapper container mt-5">
 						<?php wc_print_notices(); ?>
 					</div>
+					<?php endif; ?>
 
 					<?php the_content(); ?>
 					
+					<?php if ( is_woocommerce_activated() ) : ?>
 					<section class="wdp_new_products">
 						<div class="container">
 							<div class="row p-md-4 p-2">
@@ -47,6 +50,7 @@ get_header(); ?>
 							</div><!--/.products-->
 						</div>
 					</section>
+					<?php endif; ?>
 
 					<section id="entry" class="py-5">
 						<div class="text-center container">
@@ -84,14 +88,14 @@ get_header(); ?>
 							<div class="col-12">
 								<h4>Zahlungsmethoden</h4>
 								<div class="wdp-row justify-content-center">
-									<div><img class="footer-icon" src="/inc/assets/images/klarna2.png" alt=""></div>
-									<div><img class="footer-icon" src="/inc/assets/images/klarna3.png" alt=""></div>
-									<div><img class="footer-icon" src="/inc/assets/imagesKlarna-1.png" alt=""></div>
-									<div><img class="footer-icon" src="/inc/assets/images/logo_electroniccash.jpg" alt=""></div>
-									<div><img class="footer-icon" src="/inc/assets/images/pp.png" alt=""></div>
-									<div><img class="footer-icon" src="/inc/assets/images/americanex.jpg" alt=""></div>
-									<div><img class="footer-icon" src="/inc/assets/images/mastercard.png" alt=""></div>
-									<div><img class="footer-icon" src="/inc/assets/images/visa.png" alt=""></div>
+									<div><img class="footer-icon" src="<?=get_template_directory_uri();?>/inc/assets/images/klarna2.png" alt=""></div>
+									<div><img class="footer-icon" src="<?=get_template_directory_uri();?>/inc/assets/images/klarna3.png" alt=""></div>
+									<div><img class="footer-icon" src="<?=get_template_directory_uri();?>/inc/assets/images/Klarna-1.png" alt=""></div>
+									<div><img class="footer-icon" src="<?=get_template_directory_uri();?>/inc/assets/images/logo_electroniccash.jpg" alt=""></div>
+									<div><img class="footer-icon" src="<?=get_template_directory_uri();?>/inc/assets/images/pp.png" alt=""></div>
+									<div><img class="footer-icon" src="<?=get_template_directory_uri();?>/inc/assets/images/americanex.jpg" alt=""></div>
+									<div><img class="footer-icon" src="<?=get_template_directory_uri();?>/inc/assets/images/mastercard.png" alt=""></div>
+									<div><img class="footer-icon" src="<?=get_template_directory_uri();?>/inc/assets/images/visa.png" alt=""></div>
 								</div>
 							</div>
 

@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<div class = "topbar py-2 py-md-2 px-1 px-md-3">
+	<div class="topbar py-2 py-md-2 px-1 px-md-3">
 		<div class="d-block d-md-none" id="topbarToggler">
 			<a class="btn btn-link text-left w-100" data-toggle="collapse" href="#topbarCollapse" role="button" aria-expanded="false" aria-controls="topbarCollapse" id="topbarTogglerText">
     			<?php echo get_theme_mod('topbar_toggler_text', 'Contact us'); ?><i class="fas fa-chevron-down float-right mt-1 ml-2"></i>
@@ -82,9 +82,7 @@
 		// PAGE SUB HEADER / HEADER BANNER START
 		if ( is_front_page() && !get_theme_mod( 'header_banner_visibility' ) ): ?>
 			<div id="page-sub-header" <?php if(has_header_image()) { ?>style="background-image: url('<?php header_image(); ?>');" <?php } ?>>
-				<div class="overlay">
-					<!-- silence :) -->
-				</div>
+				<div class="overlay"></div>
 				<div class="container">
 					<h1>
 						<?php

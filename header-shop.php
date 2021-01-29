@@ -49,28 +49,33 @@
             } ?>
 
             <?php
-            $myaccount_page_id = get_option( 'woocommerce_myaccount_page_id' );
-            if ( $myaccount_page_id ) {
-                $myaccount_page_url = get_permalink( $myaccount_page_id );
-            } ?>
+            if ( is_woocommerce_activated() ) {
+                $myaccount_page_id = get_option( 'woocommerce_myaccount_page_id' );
+                if ( $myaccount_page_id ) {
+                    $myaccount_page_url = get_permalink( $myaccount_page_id );
+                } ?>
+
+                <a class="navbar-icon text-dark order-5 order-xl-6 d-none d-xl-block" href="<?php echo $myaccount_page_url; ?>"> 
+                    <?php if ( is_user_logged_in() ) {
+                        echo '<i class="fas fa-user-circle"></i>';
+                    }else{
+                        echo '<i class="fas fa-sign-in-alt"></i>';
+                    }
+                    ?>
+                </a>
+            <?php  
+            }           
             
-            <a class="navbar-icon text-dark order-5 order-xl-6 d-none d-xl-block" href="<?php echo $myaccount_page_url; ?>"> 
-                <?php if ( is_user_logged_in() ) {
-                    echo '<i class="fas fa-user-circle"></i>';
-                }else{
-                    echo '<i class="fas fa-sign-in-alt"></i>';
-                }
-                ?>
-            </a>
-            
-            <?php if (!is_checkout()) : ?>
-            <a class="navbar-icon text-dark order-3 order-xl-5" data-toggle="modal" data-target="#exampleModalCenter">
-                <span class="fa-layers c-pointer">
-                    <i class="fas fa-shopping-basket"></i>
-                    <span class="fa-layers-counter" id="mini-cart-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
-                </span>
-            </a>
-            <?php endif; ?>
+            if ( is_woocommerce_activated() ) {
+                if (!is_checkout()) : ?>
+                <a class="navbar-icon text-dark order-3 order-xl-5" data-toggle="modal" data-target="#exampleModalCenter">
+                    <span class="fa-layers c-pointer">
+                        <i class="fas fa-shopping-basket"></i>
+                        <span class="fa-layers-counter" id="mini-cart-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+                    </span>
+                </a>
+                <?php endif;
+            }?>
 			
 			<a class="navbar-icon text-dark order-6 order-xl-4 d-none d-xl-block" data-toggle="modal" data-target="#productSearchModal">
                 <i class="fas fa-search"></i>
@@ -100,6 +105,8 @@
 	?>
 	
 	<ul class="navbar-nav mt-5">
+
+        <?php if ( is_woocommerce_activated() ) : ?>
 		<li class="nav-item">
 			<a class="nav-link" href="<?php echo $myaccount_page_url; ?>">
 				<?php if ( is_user_logged_in() ) {
@@ -110,11 +117,12 @@
                 ?>
 			</a>
 		</li>
-		<li class="nav-item">
+        <li class="nav-item">
 			<a class="nav-link"	href="<?php echo wc_get_cart_url(); ?>">
 				 <i class="fas fa-shopping-basket mr-2"></i>Warenkorb
 			</a>
 		</li>
+        <?php endif; ?>
 	</ul>
 	
 	<div class="sitename">
@@ -123,13 +131,13 @@
 	
 </div>
 
-<!-- Serach Modal -->
+<!-- Modal 1 -->
 <div class="modal fade" id="productSearchModal" tabindex="-1" role="dialog" aria-labelledby="productSearchModalTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h3 class="modal-title m-0 p-0" id="productSearchModalTitle">
-                    <?php echo __('Produktsuche', 'woocommerce'); ?>
+                    <?php echo __('Produktsuche', 'wp-bootstrap-starter'); ?>
                 </h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -144,8 +152,8 @@
     </div>
 </div>
 
-<!-- Cart Modal -->
-<?php global $woocommerce; ?>
+<!-- Modal 2 -->
+<?php if ( is_woocommerce_activated() ) : global $woocommerce; ?>
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -184,16 +192,4 @@
         </div>
     </div>
 </div>
-
-<div id="shipping_info_toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
-    <div class="toast-header">
-        <i class="fas fa-shipping-fast mr-2"></i><strong class="mr-auto">Kostenloser Versand</strong>
-        <small class="text-muted">Jetzt</small>
-        <button type="button" class="ml-2 mb-1 close" onclick="closeShippingInfoToast()" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
-    <div class="toast-body">
-        Ab einem Bestellwert von 100€ ist der Hin- &amp; Rückversand innerhalb Deutschlands kostenlos!
-    </div>
-</div>
+<?php endif; ?>

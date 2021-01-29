@@ -87,7 +87,7 @@ jQuery( function ( $ ) {
 
             var winTop = $(window).scrollTop();
                 if (pos < winTop + 600) {
-                $(this).addClass("slideup");
+                    $(this).addClass("slideup");
                 }
         });
     });
@@ -99,7 +99,7 @@ jQuery( function ( $ ) {
 
             var winTop = $(window).scrollTop();
                 if (pos < winTop + 600) {
-                $(this).addClass("fadein");
+                    $(this).addClass("fadein");
                 }
         });
     });

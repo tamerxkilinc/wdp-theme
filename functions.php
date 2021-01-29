@@ -173,6 +173,15 @@ function wp_bootstrap_starter_widgets_init() {
         'after_widget'  => '</div>',
         'before_title'  => '',
         'after_title'   => '',
+	) );
+	register_sidebar( array(
+        'name'          => esc_html__( 'Header 1', 'wp-bootstrap-starter' ),
+        'id'            => 'header-1',
+        'description'   => esc_html__( 'Add widgets here.', 'wp-bootstrap-starter' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '',
+        'after_title'   => '',
     ) );
 }
 add_action( 'widgets_init', 'wp_bootstrap_starter_widgets_init' );
@@ -220,7 +229,7 @@ function wp_bootstrap_starter_scripts() {
 	// load fancybox js
 	wp_enqueue_script( 'wp-bootstrap-starter-fancybox-js', 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js', array() );
 
-	if( get_theme_mod('header_template','one') == 'shop'){
+	if( get_theme_mod('header_template','one') === 'shop'){
 		// offcanvas css
 		wp_enqueue_style( 'wp-bootstrap-starter-offcanvas-css',  get_template_directory_uri() . '/inc/assets/css/offcanvas.css', false, '1.0.1' );
 		// load offcanvas js
@@ -290,7 +299,16 @@ if ( ! class_exists( 'wp_single_bootstrap_navwalker' )) {
     require_once(get_template_directory() . '/inc/wp_single_bootstrap_navwalker.php');
 }
 
-function my_login_logo() { ?>
+/**
+ * Check if WooCommerce is activated
+ */
+if ( ! function_exists( 'is_woocommerce_activated' ) ) {
+	function is_woocommerce_activated() {
+		if ( class_exists( 'woocommerce' ) ) { return true; } else { return false; }
+	}
+}
+
+function wdp_login_logo() { ?>
     <style type="text/css">
         #login h1 a, .login h1 a {
             background-image: url('<?php echo esc_attr(get_theme_mod( 'wp_bootstrap_starter_logo' )); ?>');
@@ -302,17 +320,17 @@ function my_login_logo() { ?>
         }
     </style>
 <?php }
-add_action( 'login_enqueue_scripts', 'my_login_logo' );
+add_action( 'login_enqueue_scripts', 'wdp_login_logo' );
 
-function my_login_logo_url() {
+function wdp_login_logo_url() {
     return home_url();
 }
-add_filter( 'login_headerurl', 'my_login_logo_url' );
+add_filter( 'login_headerurl', 'wdp_login_logo_url' );
 
-function my_login_logo_url_title() {
+function wdp_login_logo_url_title() {
     return get_bloginfo( 'name' );
 }
-add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+add_filter( 'login_headertitle', 'wdp_login_logo_url_title' );
 
 function wdp_remove_autop_pages() {
     if ( is_page() ) {

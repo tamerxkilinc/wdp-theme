@@ -37,10 +37,13 @@ Tags: bootstrap, woocommerce, gutenberg, company, portfolio, services, website, 
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+html, body {
+	overflow-x: hidden;
+}
+
 body {
 	margin: 0;
-	-webkit-font-smoothing: auto;
-	overflow-x:hidden;
+	-webkit-font-smoothing: auto;	
 }
 
 article,

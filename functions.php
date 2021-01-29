@@ -389,3 +389,8 @@ function wdp_refresh_mini_cart_count($fragments){
     return $fragments;
 }
 add_filter( 'woocommerce_add_to_cart_fragments', 'wdp_refresh_mini_cart_count');
+
+function remove_add_to_cart_buttons() {
+    remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart' );
+}
+add_action( 'woocommerce_after_shop_loop_item', 'remove_add_to_cart_buttons', 1 );

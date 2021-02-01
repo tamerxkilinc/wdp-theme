@@ -168,4 +168,4 @@
 
  }
 
- add_action('tgmpa_register', 'tgm-plugins');
+ add_action('tgmpa_register', 'tgm_plugins');

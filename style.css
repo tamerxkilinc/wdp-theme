@@ -1326,3 +1326,32 @@ footer#colophon .modal-body *, footer#colophon .modal-body, footer#colophon .mod
 	visibility: visible;
 	transition-duration: 0.5s;
 }
+
+
+/*-------------------------------------------------------------------
+## Payments section css
+-------------------------------------------------------------------*/
+
+
+#payments-section .container .row .wdp-row div{
+	height:55px;
+	width:120px;
+	padding:0px 30px;
+	background-color:#f5f6f7;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	margin: 5px 5px;
+}
+
+.footer-icon{
+	max-height:30px;
+	width:auto;
+}
+
+.wdp-row{
+	justify-content:center;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}

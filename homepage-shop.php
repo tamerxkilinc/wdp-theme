@@ -84,14 +84,14 @@ get_header(); ?>
 							<div class="col-12">
 								<h4>Zahlungsmethoden</h4>
 								<div class="wdp-row justify-content-center">
-									<div><img class="footer-icon" src="/inc/assets/images/klarna2.png" alt=""></div>
-									<div><img class="footer-icon" src="/inc/assets/images/klarna3.png" alt=""></div>
-									<div><img class="footer-icon" src="/inc/assets/imagesKlarna-1.png" alt=""></div>
-									<div><img class="footer-icon" src="/inc/assets/images/logo_electroniccash.jpg" alt=""></div>
-									<div><img class="footer-icon" src="/inc/assets/images/pp.png" alt=""></div>
-									<div><img class="footer-icon" src="/inc/assets/images/americanex.jpg" alt=""></div>
-									<div><img class="footer-icon" src="/inc/assets/images/mastercard.png" alt=""></div>
-									<div><img class="footer-icon" src="/inc/assets/images/visa.png" alt=""></div>
+									<div><img class="footer-icon" src="<?=get_template_directory_uri();?>/inc/assets/images/klarna2.png" alt=""></div>
+									<div><img class="footer-icon" src="<?=get_template_directory_uri();?>/inc/assets/images/klarna2.png" alt=""></div>
+									<div><img class="footer-icon" src="<?=get_template_directory_uri();?>/inc/assets/images/klarna2.png" alt=""></div>
+									<div><img class="footer-icon" src="<?=get_template_directory_uri();?>/inc/assets/images/klarna2.png" alt=""></div>
+									<div><img class="footer-icon" src="<?=get_template_directory_uri();?>/inc/assets/images/klarna2.png" alt=""></div>
+									<div><img class="footer-icon" src="<?=get_template_directory_uri();?>/inc/assets/images/klarna2.png" alt=""></div>
+									<div><img class="footer-icon" src="<?=get_template_directory_uri();?>/inc/assets/images/klarna2.png" alt=""></div>
+									<div><img class="footer-icon" src="<?=get_template_directory_uri();?>/inc/assets/images/klarna2.png" alt=""></div>
 								</div>
 							</div>
 

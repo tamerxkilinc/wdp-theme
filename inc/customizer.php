@@ -443,24 +443,6 @@ function wp_bootstrap_starter_customize_register( $wp_customize ) {
             ) )
     );
 
-    $wp_customize->add_setting( 'entry_header', array(
-        'default'   => 'Porsche Entry Header',
-        'type'       => 'theme_mod',
-        'capability' => 'edit_theme_options',
-    ) );
-
-    $wp_customize->add_control(
-		'entry_header',
-		array(
-			'label'      => __( 'Porsche Entry Header', 'wp-bootstrap-starter' ),
-			'description' => __('Text HTML allowed.', 'wp-bootstrap-starter'),
-			'type' => 'text',
-			'section'    => 'entry-header',
-			'settings'   => 'entry_header',
-		)
-    );
-
-    /*
     $wp_customize->add_setting( 'entry_text', array(
         'default'   => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
         'type'       => 'theme_mod',
@@ -493,7 +475,7 @@ function wp_bootstrap_starter_customize_register( $wp_customize ) {
 			'section'    => 'topbar',
 			'settings'   => 'topbar_text_left1',
 		)
-    );*/
+    );
 	
 	$wp_customize->add_setting( 'topbar_text_left2', array(
         'default'   => 'info@webdesignpresse.com',

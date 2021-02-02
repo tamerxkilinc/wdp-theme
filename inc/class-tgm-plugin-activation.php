@@ -3882,7 +3882,7 @@ if ( ! class_exists( 'TGMPA_Utils' ) ) {
 		 * @return bool
 		 */
 		protected static function emulate_filter_bool( $value ) {
-			// phpcs:disable WordPress.Arrays.ArrayDeclarationSpacing.ArrayItemNoNewLine
+			// phpcs:disable xordPress.Arrays.ArrayDeclarationSpacing.ArrayItemNoNewLine
 			static $true  = array(
 				'1',
 				'true', 'True', 'TRUE',

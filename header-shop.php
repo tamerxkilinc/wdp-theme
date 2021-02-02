@@ -76,8 +76,12 @@
                 </a>
                 <?php endif;
             }?>
-			
-			<a class="navbar-icon text-dark order-6 order-xl-4 d-none d-xl-block" data-toggle="modal" data-target="#productSearchModal">
+
+            <a class="navbar-icon text-dark order-6 order-xl-4 d-xl-block" href="/wishlist">
+                <i class="fas fa-heart mr-2"></i>
+            </a>
+
+			<a class="navbar-icon text-dark order-6 order-xl-4 d-xl-block" data-toggle="modal" data-target="#productSearchModal">
                 <i class="fas fa-search"></i>
             </a>
     
@@ -116,6 +120,11 @@
                 }
                 ?>
 			</a>
+		</li>
+        <li class="nav-item">
+            <a class="navbar-icon text-dark order-6 order-xl-4 d-none d-xl-block" href="/wishlist">
+                <i class="fas fa-heart mr-2"></i>
+            </a>
 		</li>
         <li class="nav-item">
 			<a class="nav-link"	href="<?php echo wc_get_cart_url(); ?>">

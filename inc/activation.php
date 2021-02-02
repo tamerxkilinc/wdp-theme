@@ -1,5 +1,6 @@
 <?php
  require_once(get_template_directory() . '/inc/class-tgm-plugin-activation.php');
+ add_action('tgmpa_register', 'tgm_plugins');
 
  function tgm_plugins(){
      $shop_plugins=array(
@@ -146,7 +147,7 @@
 
      );
 
-     if(get_theme_mod('header_template', 'one') ==' shop'){
+     if(get_theme_mod('header_template', 'one') == 'shop'){
          array_push($plugins, $shop_plugins);
      }
 
@@ -168,4 +169,3 @@
 
  }
 
- add_action('tgmpa_register', 'tgm_plugins');

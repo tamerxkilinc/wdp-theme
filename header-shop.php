@@ -48,13 +48,13 @@
                 ));
             } ?>
 
-            <?php
+<?php
             if ( is_woocommerce_activated() ) {
                 $myaccount_page_id = get_option( 'woocommerce_myaccount_page_id' );
                 if ( $myaccount_page_id ) {
                     $myaccount_page_url = get_permalink( $myaccount_page_id );
                 } ?>
-
+				<div class="order-3 d-flex">
                 <a class="navbar-icon text-dark order-5 order-xl-6 d-none d-xl-block" href="<?php echo $myaccount_page_url; ?>"> 
                     <?php if ( is_user_logged_in() ) {
                         echo '<i class="fas fa-user-circle"></i>';
@@ -68,12 +68,15 @@
             
             if ( is_woocommerce_activated() ) {
                 if (!is_checkout()) : ?>
-                <a class="navbar-icon text-dark order-3 order-xl-5" data-toggle="modal" data-target="#exampleModalCenter">
+                <a class="navbar-icon text-dark order-3 order-xl-5 d-xl-block" data-toggle="modal" data-target="#exampleModalCenter">
                     <span class="fa-layers c-pointer">
                         <i class="fas fa-shopping-basket"></i>
                         <span class="fa-layers-counter" id="mini-cart-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
                     </span>
                 </a>
+				<a class="navbar-icon text-dark order-4 order-xl-3 d-xl-block" data-toggle="modal" data-target="#productSearchModal">
+                	<i class="fas fa-search"></i>
+            	</a>
                 <?php endif;
             }?>
 
@@ -81,19 +84,14 @@
                 $plugin='yith-woocommerce-wishlist/init.php';
                 if(is_plugin_active($plugin)){
                 ?>
-                    <a class="navbar-icon text-dark order-6 order-xl-4 d-xl-block" href="/wishlist">
+                    <a class="navbar-icon text-dark d-none order-xl-4 d-xl-block" href="/wishlist">
                         <i class="fas fa-heart mr-2"></i>
                     </a>
 
                 <?php
                 }
-                ?>
-            
-
-			<a class="navbar-icon text-dark order-6 order-xl-4 d-xl-block" data-toggle="modal" data-target="#productSearchModal">
-                <i class="fas fa-search"></i>
-            </a>
-    
+                ?>    
+				</div>
         </nav>
     </div>
 </header><!-- #masthead -->
@@ -135,8 +133,8 @@
                 if(is_plugin_active($plugin)){
                 ?>
                     <li class="nav-item">
-                        <a class="navbar-icon text-dark order-6 order-xl-4 d-none d-xl-block" href="/wishlist">
-                            <i class="fas fa-heart mr-2"></i>
+                        <a class="nav-link" href="/wishlist">
+                            <i class="fas fa-heart mr-2"></i>Wunschliste
                         </a>
 		            </li>
 

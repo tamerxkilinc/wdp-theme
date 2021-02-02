@@ -148,7 +148,7 @@
      );
 
      if(get_theme_mod('header_template', 'one') == 'shop'){
-         array_push($plugins, $shop_plugins);
+         array_merge($plugins, $shop_plugins);
      }
 
      $config=array(

@@ -340,24 +340,35 @@ function wdp_remove_autop_pages() {
 }
 add_action( 'wp_head', 'wdp_remove_autop_pages' );
 
-// Change Woocommerce variable product price display
-function wdp_variation_price_format( $price, $product ) {
-    $prices = $product->get_variation_prices( true );
-	$prices = $prices['price'];
-    $min_price = current( $prices );
-	$max_price = end($prices);
-	if ( $min_price != $max_price ) {
-		$price = sprintf( __( 'Ab %1$s', 'wp-bootstrap-starter' ), wc_price( $min_price ) );
-		if ( is_single( ) ) {
-			$price .= ' ';
-		}
-		$price .= '<small class="woocommerce-price-suffix d-block">';
-		$price .= sprintf( __( 'inkl. MwSt.', 'wp-bootstrap-starter' ) );
-		$price .= '</small>';
-		return $price;
-	}
-	return $price;
+/**
+ * Change price format from range to "Ab "
+ *
+ * @param float $price
+ * @param obj $product
+ * @return str
+ */
+function wdp_variable_price_format( $price, $product ) {
+
+    $prefix = sprintf('%s ', __('Ab', 'woocommerce'));
+	$suffix = '<small class="woocommerce-price-suffix d-block">inkl. MwSt.</small>';
+
+    $min_price_regular = $product->get_variation_regular_price( 'min', true );
+    $min_price_sale    = $product->get_variation_sale_price( 'min', true );
+    $max_price = $product->get_variation_price( 'max', true );
+    $min_price = $product->get_variation_price( 'min', true );
+
+    $price = ( $min_price_sale == $min_price_regular ) ?
+        wc_price( $min_price_regular ) :
+        '<del>' . wc_price( $min_price_regular ) . '</del>' . '<ins>' . wc_price( $min_price_sale ) . '</ins>';
+
+//     return ( $min_price == $max_price ) ?
+//         $price :
+//         sprintf('%s %s %s', $prefix, $price, $suffix);
+	return sprintf('%s %s %s', $prefix, $price, $suffix);
 }
+
+add_filter( 'woocommerce_variable_sale_price_html', 'wdp_variable_price_format', 10, 2 );
+add_filter( 'woocommerce_variable_price_html', 'wdp_variable_price_format', 10, 2 );
 
 // Remove zoom of Woocommerce single product gallery
 function wdp_remove_zoom_lightbox_theme_support() { 

@@ -81,6 +81,12 @@
             'slug'             =>   '/jetpack',
             'recommended'         =>   'true',
         ),
+      
+        array(
+            'name'             =>   'WooCommerce PDF Invoices & Packing Slips',
+            'slug'             =>   '/woocommerce-pdf-invoices-packing-slips',
+            'required'         =>   'true',
+        ),
        
     );
 
@@ -88,12 +94,6 @@
         array(
             'name'      =>   'Hide Updates',
             'slug'      =>   'hide-updates',
-            'required'  =>   'true',
-        ),
-
-        array(
-            'name'      =>   'Hide Updates',
-            'slug'      =>   '/html-editor-syntax-highlighter',
             'required'  =>   'true',
         ),
 
@@ -144,7 +144,6 @@
             'slug'             =>   '/newsletter',
             'recommended'         =>   'true',
         ),
-
      );
 
      if(get_theme_mod('header_template', 'one') == 'shop'){

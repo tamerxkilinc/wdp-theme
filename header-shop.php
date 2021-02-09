@@ -71,7 +71,9 @@
                 <a class="navbar-icon text-dark order-3 order-xl-5 d-xl-block" data-toggle="modal" data-target="#exampleModalCenter">
                     <span class="fa-layers c-pointer">
                         <i class="fas fa-shopping-basket"></i>
-                        <span class="fa-layers-counter" id="mini-cart-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+                        <span class="fa-layers-counter">
+                            <div id="mini-cart-count"><?php echo WC()->cart->get_cart_contents_count(); ?></div>
+                        </span>
                     </span>
                 </a>
 				<a class="navbar-icon text-dark order-4 order-xl-3 d-xl-block" data-toggle="modal" data-target="#productSearchModal">

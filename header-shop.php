@@ -195,14 +195,14 @@
                 <?php the_widget( 'WC_Widget_Cart', 'title=' ); ?>
 
 				<div class="row justify-content-center no-gutters py-3">
-                    <div class="col-auto" src="<?=get_template_directory_uri();?>/inc/assets/images/klarna2.png" alt=""></div>
-                    <div class="col-auto" src="<?=get_template_directory_uri();?>/inc/assets/images/klarna3.png" alt=""></div>
-                    <div class="col-auto" src="<?=get_template_directory_uri();?>/inc/assets/images/Klarna-1.png" alt=""></div>
-                    <div class="col-auto" src="<?=get_template_directory_uri();?>/inc/assets/images/logo_electroniccash.jpg" alt=""></div>
-                    <div class="col-auto" src="<?=get_template_directory_uri();?>/inc/assets/images/pp.png" alt=""></div>
-                    <div class="col-auto" src="<?=get_template_directory_uri();?>/inc/assets/images/americanex.jpg" alt=""></div>
-                    <div class="col-auto" src="<?=get_template_directory_uri();?>/inc/assets/images/mastercard.png" alt=""></div>
-                    <div class="col-auto" src="<?=get_template_directory_uri();?>/inc/assets/images/visa.png" alt=""></div>
+                    <div class="col-auto mx-2" src="<?=get_template_directory_uri();?>/inc/assets/images/klarna2.png" alt=""></div>
+                    <div class="col-auto mx-2" src="<?=get_template_directory_uri();?>/inc/assets/images/klarna3.png" alt=""></div>
+                    <div class="col-auto mx-2" src="<?=get_template_directory_uri();?>/inc/assets/images/Klarna-1.png" alt=""></div>
+                    <div class="col-auto mx-2" src="<?=get_template_directory_uri();?>/inc/assets/images/logo_electroniccash.jpg" alt=""></div>
+                    <div class="col-auto mx-2" src="<?=get_template_directory_uri();?>/inc/assets/images/pp.png" alt=""></div>
+                    <div class="col-auto mx-2" src="<?=get_template_directory_uri();?>/inc/assets/images/americanex.jpg" alt=""></div>
+                    <div class="col-auto mx-2" src="<?=get_template_directory_uri();?>/inc/assets/images/mastercard.png" alt=""></div>
+                    <div class="col-auto mx-2" src="<?=get_template_directory_uri();?>/inc/assets/images/visa.png" alt=""></div>
                 </div>
 
             </div>

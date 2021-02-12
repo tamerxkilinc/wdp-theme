@@ -1362,3 +1362,12 @@ footer#colophon .modal-body *, footer#colophon .modal-body, footer#colophon .mod
 	flex-direction:row;
 	flex-wrap:wrap;
 }
+
+/*-------------------------------------------------------------------
+## Update Modal Cart
+-------------------------------------------------------------------*/
+
+.modal-content .modal-body .no-gutters .col-auto img{
+	height:30px;
+	max-width:50px;
+}

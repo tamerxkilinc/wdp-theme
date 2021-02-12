@@ -1330,6 +1330,10 @@ footer#colophon .modal-body *, footer#colophon .modal-body, footer#colophon .mod
 	transition-duration: 0.5s;
 }
 
+.row div.col-md-6.col-12.py-5 div.yith-wcwl-add-to-wishlist div.yith-wcwl-wishlistaddedbrowse.hide/*, .row div.col-md-6.col-12.py-5 div.yith-wcwl-add-to-wishlist div.yith-wcwl-wishlistexistsbrowse.hide*/{
+	display:unset!important;
+}
+
 
 /*-------------------------------------------------------------------
 ## Payments section css

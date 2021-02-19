@@ -29,7 +29,7 @@
   			</a>
 		</div>
 		<div class="row align-items-center collapse" id="topbarCollapse">		
-			<div class="col-md-6 col-12 text-center flex-lg-wrap d-flex text-lg-left flex-column flex-lg-row" id="topbar-left">
+			<div class="col-md-6 col-12 text-center flex-md-wrap d-flex text-md-left flex-column flex-md-row" id="topbar-left">
 				<?php
 					if ( is_active_sidebar( 'topbar-l1' )) {
 						dynamic_sidebar( 'topbar-l1' );
@@ -39,7 +39,7 @@
 					}
 				?>
 			</div>
-			<div class="col-md-6 col-12 text-center flex-lg-wrap d-flex text-lg-right flex-column flex-lg-row-reverse" id="topbar-right">
+			<div class="col-md-6 col-12 text-center flex-lg-wrap d-flex text-md-right flex-column flex-md-row-reverse" id="topbar-right">
 				<?php
 					if ( is_active_sidebar( 'topbar-r1' )) {
 						dynamic_sidebar( 'topbar-r1' );

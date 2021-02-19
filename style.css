@@ -1068,9 +1068,8 @@ font-weight:bold;
 		border-bottom-style:solid;
 	}
 
-	.topbar p {
-		padding-top:10px;
-		padding-bottom:10px;
+	.topbar .textwidget.custom-html-widget{
+		padding:10px 0px;
 	}
 
 

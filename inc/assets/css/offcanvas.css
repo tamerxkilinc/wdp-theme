@@ -61,3 +61,26 @@
 	float: right;
 	margin-top: 7px;
 }
+
+.offcanvas-collapse ul.navbar-nav li.dropdown {
+	position: relative;
+}
+
+.offcanvas-collapse ul.navbar-nav li.dropdown ul.dropdown-menu {
+	position: relative!important;
+	margin-left: 0px;
+	transform: none!important;
+}
+
+.offcanvas-collapse .dropdown-menu .nav-item {
+	padding-left:0px!important;
+}
+
+.offcanvas-collapse .dropdown-menu .nav-item .dropdown-item {
+	padding: 10px;
+}
+
+.offcanvas-collapse .dropdown-menu .nav-item .dropdown-item .dropdown-toggle .caret::after {
+	float: right;
+	margin-top: 7px;
+}

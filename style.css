@@ -1061,18 +1061,12 @@ font-weight:bold;
 		border:0!important;
 	}	
 
-	.topbar a {
+	.topbar .textwidget.custom-html-widget {
 		padding-top:10px;
 		padding-bottom:10px;
 		border-bottom-width:1px;
 		border-bottom-style:solid;
 	}
-
-	.topbar .textwidget.custom-html-widget{
-		padding:10px 0px;
-	}
-
-
 }
 
 /*----------------------------------------------------------------
@@ -1195,7 +1189,7 @@ a.social_links i {
 
 @media (max-width:768px) {
 	.navbar-brand {
-		width:70%;
+		width:50%;
 	}
 
 	#page-sub-header h1 {

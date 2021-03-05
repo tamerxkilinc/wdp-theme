@@ -1,3 +1,5 @@
+/* Version number 1.0.2 */
+
 @media (min-width: 1200px) {
 	.offcanvas-collapse {
 		display: none;
@@ -83,4 +85,12 @@
 .offcanvas-collapse .dropdown-menu .nav-item .dropdown-item .dropdown-toggle .caret::after {
 	float: right;
 	margin-top: 7px;
+}
+
+.offcanvas-backdrop.open {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: 9999;
 }

@@ -240,9 +240,9 @@ function wp_bootstrap_starter_scripts() {
 
 	if( get_theme_mod('header_template','one') === 'shop'){
 		// offcanvas css
-		wp_enqueue_style( 'wp-bootstrap-starter-offcanvas-css',  get_template_directory_uri() . '/inc/assets/css/offcanvas.css', false, '1.0.1' );
+		wp_enqueue_style( 'wp-bootstrap-starter-offcanvas-css',  get_template_directory_uri() . '/inc/assets/css/offcanvas.css', false, '1.0.2' );
 		// load offcanvas js
-		wp_enqueue_script( 'wp-bootstrap-starter-offcanvas-js', get_template_directory_uri() . '/inc/assets/js/offcanvas.js', array(), '1.0.1' );
+		wp_enqueue_script( 'wp-bootstrap-starter-offcanvas-js', get_template_directory_uri() . '/inc/assets/js/offcanvas.js', array(), '1.0.2' );
 	}
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

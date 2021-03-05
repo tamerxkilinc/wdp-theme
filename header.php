@@ -21,6 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div class="offcanvas-backdrop"></div>
 <div id="page" class="site">
 	<div class="topbar py-2 py-md-2 px-1 px-md-3">
 		<div class="d-block d-md-none" id="topbarToggler">
